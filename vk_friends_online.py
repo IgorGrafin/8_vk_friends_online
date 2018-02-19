@@ -6,11 +6,11 @@ APP_ID = 6379260
 
 
 def get_user_login():
-    return input("Введите логин: ")
+    return input("Input your login: ")
 
 
 def get_user_password():
-    return getpass.getpass("Введите пароль: ")
+    return getpass.getpass("Input your password: ")
 
 
 def get_online_friends(login, password):
@@ -42,5 +42,5 @@ if __name__ == '__main__':
     try:
         friends_online = get_online_friends(login, password)
     except vk.exceptions.VkAuthError:
-        exit("Неверные логин/пароль")
+        exit("Incorrect Login/Password")
     output_friends_to_console(friends_online)
