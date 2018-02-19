@@ -18,18 +18,15 @@ Start the program and input your login/password in vk.com
 
 ```
 PS E:\GitHub\devman\8_vk_friends_online> python.exe .\vk_friends_online.py
-Введите логин: paaaaaa@mail.ru
-Введите пароль:
-Настя S
-Екатерина S
-Аничка S
-Анжелика S
-Maxim S
+Input your login: youremail@mail.ru
+Input your password:
+Ольга G
+Екатерина K
+Саша Б
+Анжелика Б
 Ilya S
-Александр S
-Александр S
-Сергей B
-Игорь a
+Александр И
+Сергей О
 ```
 
 # Project Goals
