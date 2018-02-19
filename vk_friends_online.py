@@ -24,7 +24,7 @@ def get_online_friends(login, password):
 
     return api.users.get(
         user_ids=api.friends.getOnline(),
-        fields='first_name, last_name, online'
+        fields='first_name, last_name'
     )
 
 
@@ -39,8 +39,9 @@ def output_friends_to_console(friends_online):
 if __name__ == '__main__':
     login = get_user_login()
     password = get_user_password()
+    friends_online = ""
     try:
         friends_online = get_online_friends(login, password)
+        output_friends_to_console(friends_online)
     except vk.exceptions.VkAuthError:
         exit("Incorrect Login/Password")
-    output_friends_to_console(friends_online)
